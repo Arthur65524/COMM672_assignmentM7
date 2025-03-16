@@ -2,3 +2,85 @@ body {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.item {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.g1 .i1 {background-color: lightgray;}
+.g1 .i2 {background-color: lightgray;}
+.g1 .i3 {background-color: lightgray;}
+.g1 .i4 {background-color: lightgray;}
+.g1 .i5 {background-color: lightgray;}
+.g1 .i6 {background-color: lightgray;}
+.g1 .i7 {background-color: lightgray;}
+.g1 .i8 {background-color: lightgray;}
+.g1 .i9 {background-color: lightgray;}
+
+.g1 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3,200px);
+    gap: 10px;
+}
+
+.g2 .i1 {background-color: salmon;}
+.g2 .i2 {background-color: salmon;}
+.g2 .i3 {background-color: salmon;}
+.g2 .i4 {background-color: salmon;}
+.g2 .i5 {background-color: salmon;}
+.g2 .i6 {background-color: salmon;}
+.g2 .i7 {background-color: salmon;}
+.g2 .i8 {background-color: salmon;}
+.g2 .i9 {background-color: salmon;}
+.g2 .i10 {background-color:salmon;}
+.g2 .i11 {background-color: salmon;}
+.g2 .i12 {background-color: salmon;}
+.g2 .i13 {background-color: salmon;}
+.g2 .i14 {background-color: salmon;}
+.g2 .i15 {background-color: salmon;}
+.g2 .i16 {background-color: salmon}
+.g2 {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(2, 50px minmax(75px, 1fr));
+    gap: 15px;
+}
+
+.g3 {
+    display: grid;
+    height: 400px;
+    gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "sidebar articles articles"
+        "sidebar articles articles"
+        "sidebar articles articles"
+        "sidebar featured featured"
+        "sidebar featured featured"
+        "sidebar featured featured"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.g3 header {
+    background-color: lightblue;
+    grid-area: header;
+}
+.g3 aside {
+    background-color: lightpink;
+    grid-area: sidebar;
+}
+.g3 .articles {
+    background-color: teal;
+    grid-area: articles;
+}
+.g3 .featured {
+    background-color: lightyellow;
+    grid-area: featured;
+}
+.g3 footer {
+    background-color: lightgray;
+    grid-area: footer;
+}
