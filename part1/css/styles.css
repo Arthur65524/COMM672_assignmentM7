@@ -49,24 +49,19 @@ body {
 }
 
 .g3 {
-    display: grid;
     height: 400px;
-    gap: 10px;
+    display: grid;
     grid-template-areas:
-        "header header header"
-        "sidebar articles articles"
-        "sidebar articles articles"
-        "sidebar articles articles"
-        "sidebar featured featured"
-        "sidebar featured featured"
-        "sidebar featured featured"
-        "footer footer footer";
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr 1fr;
-}
+      "header header"
+      "sidebar main"
+      "footer footer";
+      grid-template-columns: .25fr 1fr;
+      grid-template-rows: max-content auto max-content;
+      gap: 15px;
+  }
 .g3 header {
     background-color: lightblue;
-    grid-area: header;
+    grid-area: header;;
 }
 .g3 aside {
     background-color: lightpink;
@@ -74,13 +69,17 @@ body {
 }
 .g3 .articles {
     background-color: teal;
-    grid-area: articles;
 }
 .g3 .featured {
     background-color: lightyellow;
-    grid-area: featured;
 }
 .g3 footer {
     background-color: lightgray;
     grid-area: footer;
+}
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 25%;
+    gap: 15px;
 }
