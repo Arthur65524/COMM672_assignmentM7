@@ -60,6 +60,8 @@ footer {
 footer img {
     width: 35px;
 }
+
+
 .community {
     width: 1000px;
     display: grid;
@@ -67,32 +69,34 @@ footer img {
     grid-template-rows: .5fr .5fr;
     gap: 15px;
 }
-.featured {
-    width: 1000px;
+.event-block {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    text-align: center;
+    
+}
+.featured {
+    grid-template-columns: 1fr 1fr 2fr;
     grid-auto-rows: auto;
     grid-row: span 1;
     grid-column: span 3;
-}
-img {
-    width: 300px;
-    padding: none;
 }
 .featured img {
     width: 500px;
     grid-row: span 3;
     grid-column:  span 2;
 }
-.event-block {
-    text-align: center;
-}
-.event-block p {
-    padding: 0 25px;
-}
-span {
-    font-style: italic;
+img {
+    width: 300px;
+    padding: none;
 }
 .featured p {
     text-align: left;
 }
+span {
+    font-style: italic;
+}
+.event-block p {
+    padding: 0 20px;
+}
+
+
