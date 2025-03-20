@@ -60,29 +60,39 @@ footer {
 footer img {
     width: 35px;
 }
-.container {
+.community {
     width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: .5fr .5fr;
-    gap: 10px;
+    gap: 15px;
 }
 .featured {
-    background-color: #dedede;
     width: 1000px;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-auto-rows: auto;
-    gap: 30px;
     grid-row: span 1;
     grid-column: span 3;
+}
+img {
+    width: 300px;
+    padding: none;
 }
 .featured img {
     width: 500px;
     grid-row: span 3;
     grid-column:  span 2;
 }
-.featured h3, p {
-    margin-right: 50px;
+.event-block {
+    text-align: center;
+}
+.event-block p {
+    padding: 0 25px;
+}
+span {
+    font-style: italic;
+}
+.featured p {
+    text-align: left;
 }
